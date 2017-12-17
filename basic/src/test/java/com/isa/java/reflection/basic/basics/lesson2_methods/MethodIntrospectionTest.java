@@ -1,4 +1,4 @@
-package com.isa.java.reflection.basic.methods;
+package com.isa.java.reflection.basic.basics.lesson2_methods;
 
 import static org.assertj.core.api.Assertions.assertThat;
 import static org.assertj.core.api.Assertions.fail;
@@ -17,6 +17,7 @@ public class MethodIntrospectionTest {
         try {
             Method method = Animal.class.getDeclaredMethod("walk", new Class[]{});
 
+            assertThat(method.getDeclaringClass()).isEqualTo(Animal.class);
             assertThat(method.getName()).isEqualTo("walk");
             assertThat(method.getReturnType()).isEqualTo(String.class);
             assertThat(method.getParameterCount()).isEqualTo(0);
@@ -31,6 +32,7 @@ public class MethodIntrospectionTest {
         try {
             Method method = Animal.class.getMethod("walk", new Class[]{});
 
+            assertThat(method.getDeclaringClass()).isEqualTo(Animal.class);
             assertThat(method.getName()).isEqualTo("walk");
             assertThat(method.getReturnType()).isEqualTo(String.class);
             assertThat(method.getParameterCount()).isEqualTo(0);

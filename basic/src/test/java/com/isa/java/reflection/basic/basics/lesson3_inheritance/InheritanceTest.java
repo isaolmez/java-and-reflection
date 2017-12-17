@@ -1,4 +1,4 @@
-package com.isa.java.reflection.basic.inheritance;
+package com.isa.java.reflection.basic.basics.lesson3_inheritance;
 
 import static org.assertj.core.api.Assertions.assertThat;
 

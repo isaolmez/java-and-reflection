@@ -1,4 +1,4 @@
-package com.isa.java.reflection.basic.classes;
+package com.isa.java.reflection.basic.basics.lesson1_classes;
 
 
 import static org.assertj.core.api.Assertions.assertThat;
@@ -41,7 +41,7 @@ public class ClassIntrospectionTest {
     public void shouldGetName() {
         String actual = Person.class.getName();
 
-        assertThat(actual).isEqualTo("com.isa.java.reflection.basic.classes.Person");
+        assertThat(actual).isEqualTo("com.isa.java.reflection.basic.basics.lesson1_classes.Person");
     }
 
     @Test

@@ -1,4 +1,4 @@
-package com.isa.java.reflection.basic.classes;
+package com.isa.java.reflection.basic.basics.lesson1_classes;
 
 import static org.assertj.core.api.Assertions.assertThat;
 
